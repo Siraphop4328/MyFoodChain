@@ -28,8 +28,9 @@ String timeString;
 
 void setup(){
   fullScreen(P3D);
+  noStroke();
   
-  
+    colorsTerrain();
   
   frameRate(60);
   noiseSeed((long) random(100000));
@@ -65,8 +66,11 @@ void draw(){
   background(backgroundColor);
   theStartOfTime();
 
+  
+
   updateCamera();
   applyCamera();
+
 
 
   drawTerrain();
