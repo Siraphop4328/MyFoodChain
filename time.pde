@@ -16,14 +16,12 @@ int now = millis();
   min = (int) (totalSec % 3600) / 60;
   sec = (int) totalSec % 60;
 
-  String timeString = nf(year, 2) + " " + nf(month, 2) + " " + nf(day, 2) + " " + nf(hour, 2) + " " + nf(min, 2) + " " + nf(sec, 2);
   
 
   
-  fill(0);
-  text(nf((float) simulationTime), 10, 20);
-  text("Date: " +  timeString, 10, 40);
-  text(pace, 10, 60);
+ 
+  
 
   
 }
+
