@@ -9,16 +9,18 @@ int sec, min, hour, day, month, year;
 
 
 int cols, rows;
-int scl = 20;
+int scl = 50;
 int w;
 int h;
 
 
 void setup(){
   fullScreen(P3D);
+  frameRate(60);
+  noiseSeed((long) random(100000));
   
-  w = width;
-  h = height;
+  w = 2000;
+  h = 2000;
 
   cols = w/scl;
   rows = h/scl;
